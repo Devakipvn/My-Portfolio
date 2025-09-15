@@ -59,19 +59,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com"
+      value: "devakipvn@gmail.com",
+      href: "mailto:devakipvn@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8328033928",
+      href: "tel:+918328033928"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Tirupati, A.P, India",
       href: "#"
     }
   ];
@@ -80,25 +80,19 @@ const ContactSection = () => {
     {
       icon: Github,
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/Devakipvn",
       color: "hover:text-foreground"
     },
     {
       icon: Linkedin,
       name: "LinkedIn", 
-      href: "https://linkedin.com",
-      color: "hover:text-blue-400"
-    },
-    {
-      icon: Twitter,
-      name: "Twitter",
-      href: "https://twitter.com",
+      href: "https://linkedin.com/in/pvndevaki",
       color: "hover:text-blue-400"
     },
     {
       icon: Mail,
       name: "Email",
-      href: "mailto:alex.johnson@email.com",
+      href: "mailto:devakipvn@gmail.com",
       color: "hover:text-red-400"
     }
   ];

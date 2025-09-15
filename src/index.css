@@ -127,6 +127,8 @@
   .glass-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-elevated);
+    border-color: hsl(var(--primary) / 0.5);
+    background: var(--gradient-card);
   }
 
   /* Gradient text */
@@ -150,6 +152,7 @@
   .gradient-button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-glow);
+    filter: brightness(1.1);
   }
 
   .gradient-button::before {

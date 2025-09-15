@@ -27,58 +27,72 @@ const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      position: "Senior Full Stack Developer",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: "Lead a team of 5 developers in building scalable web applications. Implemented microservices architecture resulting in 40% improved performance. Mentored junior developers and established coding standards.",
-      technologies: ["React", "Node.js", "AWS", "Docker", "PostgreSQL"],
+      company: "ProjectsPlace",
+      position: "Full-Stack Developer",
+      location: "On-Site",
+      duration: "Aug 2025 - Present",
+      description: "Developed a full-stack platform alongside friends to deliver real-world applications. Designed and implemented responsive frontend interfaces and integrated backend APIs. Developed scalable and reusable code, ensuring cross-device compatibility.",
+      technologies: ["JavaScript", "TypeScript", "React.js", "Node.js", "REST APIs"],
       achievements: [
-        "Reduced application load time by 40%",
-        "Led migration to microservices architecture",
-        "Mentored 3 junior developers to mid-level positions"
+        "Contributed to project planning, design, and deployment",
+        "Developed scalable and reusable code components",
+        "Ensured cross-device compatibility"
       ]
     },
     {
       id: 2,
-      company: "StartupXYZ",
-      position: "Frontend Developer",
-      location: "San Francisco, CA", 
-      duration: "2020 - 2022",
-      description: "Developed responsive web applications using React and TypeScript. Collaborated with design team to implement pixel-perfect UI components. Implemented automated testing resulting in 60% reduction in bugs.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Jest", "Cypress"],
+      company: "Easy Hiring Infotech",
+      position: "Full-Stack Web Developer",
+      location: "Remote", 
+      duration: "Apr 2025 - Jun 2025",
+      description: "Developed a fully responsive website highlighting Vizag's popular tourist destinations, optimized for desktop and mobile. Enhanced user engagement by integrating interactive UI components, media-rich content, and smooth navigation.",
+      technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "Responsive Design"],
       achievements: [
-        "Built component library used across 5 products",
-        "Implemented comprehensive testing suite",
-        "Improved code coverage from 30% to 90%"
+        "Created fully responsive tourist destination website",
+        "Enhanced user engagement with interactive components",
+        "Optimized for both desktop and mobile platforms"
       ]
     },
     {
       id: 3,
-      company: "Digital Agency Pro",
-      position: "Junior Web Developer",
+      company: "Apex Planet Software Pvt Ltd",
+      position: "Web Development Intern",
       location: "Remote",
-      duration: "2019 - 2020",
-      description: "Created custom WordPress themes and plugins for client websites. Worked with cross-functional teams to deliver projects on time and within budget. Gained experience in various web technologies.",
-      technologies: ["JavaScript", "PHP", "WordPress", "MySQL", "HTML/CSS"],
+      duration: "Oct 2024 - Dec 2024",
+      description: "Implemented API integration and responsive design to enhance accessibility and performance. Debugged and optimized applications to improve reliability and efficiency.",
+      technologies: ["JavaScript", "API Integration", "HTML5", "CSS3"],
       achievements: [
-        "Delivered 15+ client projects successfully",
-        "Developed custom WordPress plugin with 1000+ downloads",
-        "Improved client website performance by 50%"
+        "Implemented API integration successfully",
+        "Enhanced application accessibility and performance",
+        "Improved application reliability through debugging"
       ]
     },
     {
       id: 4,
-      company: "Freelance",
-      position: "Web Developer",
-      location: "Remote",
-      duration: "2018 - 2019",
-      description: "Provided web development services to small businesses and startups. Built responsive websites and e-commerce solutions. Managed client relationships and project timelines independently.",
-      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+      company: "Sri Padmavati Mahila Visvavidyalayam",
+      position: "Master of Computer Application",
+      location: "Tirupati, A.P",
+      duration: "2023 - 2025",
+      description: "CGPA: 8.3. Advanced studies in computer applications, focusing on full-stack development, database management, and software engineering principles.",
+      technologies: ["Advanced Programming", "Database Management", "Software Engineering"],
       achievements: [
-        "Completed 25+ freelance projects",
-        "Maintained 5-star rating on freelance platforms",
-        "Generated $50K+ in revenue"
+        "Maintaining 8.3 CGPA",
+        "Specialized in full-stack development",
+        "Strong foundation in software engineering"
+      ]
+    },
+    {
+      id: 5,
+      company: "Punyagiri Degree and PG College",
+      position: "Bachelor of Computer Science",
+      location: "Vizianagaram, A.P",
+      duration: "2020 - 2023",
+      description: "CGPA: 8.7. Strong foundation in computer science fundamentals, programming languages, and web development technologies.",
+      technologies: ["Java", "Python", "Database Design", "Web Development"],
+      achievements: [
+        "Graduated with 8.7 CGPA",
+        "Strong programming foundation",
+        "Comprehensive computer science knowledge"
       ]
     }
   ];

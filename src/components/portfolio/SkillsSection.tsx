@@ -29,39 +29,45 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "React", level: 95, color: "bg-gradient-primary" },
-        { name: "TypeScript", level: 90, color: "bg-gradient-secondary" },
-        { name: "Next.js", level: 88, color: "bg-gradient-accent" },
-        { name: "Tailwind CSS", level: 92, color: "bg-gradient-primary" },
-        { name: "Vue.js", level: 85, color: "bg-gradient-secondary" }
+        { name: "JavaScript", level: 90, color: "bg-gradient-primary" },
+        { name: "TypeScript", level: 88, color: "bg-gradient-secondary" },
+        { name: "React.js", level: 92, color: "bg-gradient-accent" },
+        { name: "HTML5", level: 95, color: "bg-gradient-primary" },
+        { name: "CSS3", level: 93, color: "bg-gradient-secondary" },
+        { name: "Tailwind CSS", level: 90, color: "bg-gradient-accent" },
+        { name: "Bootstrap", level: 88, color: "bg-gradient-primary" }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 93, color: "bg-gradient-accent" },
-        { name: "Python", level: 87, color: "bg-gradient-primary" },
-        { name: "PostgreSQL", level: 90, color: "bg-gradient-secondary" },
-        { name: "MongoDB", level: 85, color: "bg-gradient-accent" },
-        { name: "GraphQL", level: 82, color: "bg-gradient-primary" }
+        { name: "Node.js", level: 87, color: "bg-gradient-accent" },
+        { name: "Python", level: 90, color: "bg-gradient-primary" },
+        { name: "Java", level: 85, color: "bg-gradient-secondary" },
+        { name: "Flask", level: 88, color: "bg-gradient-accent" },
+        { name: "REST APIs", level: 92, color: "bg-gradient-primary" },
+        { name: "PostgreSQL", level: 89, color: "bg-gradient-secondary" },
+        { name: "MySQL", level: 87, color: "bg-gradient-accent" }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Tools & Design",
       skills: [
-        { name: "Git", level: 95, color: "bg-gradient-secondary" },
-        { name: "Docker", level: 88, color: "bg-gradient-accent" },
-        { name: "AWS", level: 85, color: "bg-gradient-primary" },
-        { name: "Figma", level: 90, color: "bg-gradient-secondary" },
-        { name: "Testing", level: 87, color: "bg-gradient-accent" }
+        { name: "Git", level: 93, color: "bg-gradient-secondary" },
+        { name: "GitHub", level: 92, color: "bg-gradient-accent" },
+        { name: "Postman", level: 90, color: "bg-gradient-primary" },
+        { name: "GitHub Copilot", level: 85, color: "bg-gradient-secondary" },
+        { name: "UI/UX Design", level: 88, color: "bg-gradient-accent" },
+        { name: "Web Design", level: 90, color: "bg-gradient-primary" }
       ]
     }
   ];
 
   const techStack = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Node.js", 
-    "Python", "PostgreSQL", "MongoDB", "GraphQL", "REST API", "Docker", 
-    "AWS", "Git", "Figma", "Tailwind CSS", "Material-UI", "Express.js"
+    "JavaScript", "TypeScript", "React.js", "HTML5", "CSS3", "Bootstrap", 
+    "Tailwind CSS", "Node.js", "Python", "Java", "Flask", "REST APIs", 
+    "Git", "GitHub", "Postman", "GitHub Copilot", "PostgreSQL", "MySQL", 
+    "UI/UX Design", "Web Design"
   ];
 
   return (

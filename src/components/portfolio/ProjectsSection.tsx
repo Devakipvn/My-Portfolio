@@ -29,69 +29,47 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include real-time inventory, order tracking, and admin dashboard.",
-      image: "🛒",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      github: "https://github.com",
+      title: "Jobseekr – AI-Powered Resume & Job Platform",
+      description: "A full-stack job portal with real-time job listings via SerpAPI, secure authentication using Google/GitHub OAuth, and AI-powered tools including smart Resume Builder and AI Assistant for career guidance.",
+      image: "💼",
+      technologies: ["Next.js 14", "TypeScript", "React 18", "Tailwind CSS", "NextAuth", "Prisma ORM", "PostgreSQL"],
+      github: "https://github.com/Devakipvn",
       live: "https://demo.com",
-      category: "Full Stack",
-      longDescription: "Built a comprehensive e-commerce platform from the ground up, handling everything from user authentication to payment processing. The application features a responsive design, real-time inventory management, order tracking, and a powerful admin dashboard for managing products and analytics."
+      category: "AI/Job Portal",
+      longDescription: "Built a full-stack job portal with real-time job listings via SerpAPI, enabling job seekers to search and manage profiles efficiently. Integrated secure authentication using Google/GitHub OAuth and credentials-based login for seamless access. Developed AI-powered tools including a smart Resume Builder with personalized bullet points & summaries and AI Assistant for FAQs and career guidance. Engineered modular and reusable UI components with modern, responsive design for enhanced user experience."
     },
     {
       id: 2,
-      title: "AI Chat Application",
-      description: "Real-time chat application with AI integration using OpenAI GPT. Features include message encryption, file sharing, and smart conversation summaries.",
-      image: "🤖",
-      technologies: ["Next.js", "TypeScript", "OpenAI", "Socket.io", "MongoDB"],
-      github: "https://github.com",
+      title: "CodeCanvas – Online Code Editor",
+      description: "A full-stack code editor with instant execution and live preview for frontend technologies. Features include authentication, project management, theme toggle, and responsive design for enhanced collaboration.",
+      image: "💻",
+      technologies: ["HTML5", "CSS3", "JavaScript", "MySQL", "TailwindCSS", "Python Flask"],
+      github: "https://github.com/Devakipvn",
       live: "https://demo.com",
-      category: "AI/ML",
-      longDescription: "Developed an intelligent chat application that combines real-time messaging with AI capabilities. Users can chat with AI assistants, get conversation summaries, and enjoy secure messaging with end-to-end encryption."
+      category: "Development Tools",
+      longDescription: "Developed a full-stack code editor with instant execution and live preview for frontend technologies (HTML, CSS, JavaScript). Implemented authentication and project management features (login/register, save, load, delete, export) to improve usability. Enhanced collaboration and productivity with features like theme toggle and responsive, user-friendly interface across devices."
     },
     {
       id: 3,
-      title: "Task Management App",
-      description: "Collaborative project management tool with drag-and-drop interface, team collaboration features, and advanced analytics dashboard.",
-      image: "📋",
-      technologies: ["Vue.js", "Express.js", "MongoDB", "Chart.js", "WebSocket"],
-      github: "https://github.com",
+      title: "Psychometric Test App",
+      description: "A web-based psychometric test assessing analytical, creative, and logical reasoning with instant scoring, real-time score analysis, and personalized roadmaps with responsive UI.",
+      image: "🧠",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      github: "https://github.com/Devakipvn",
       live: "https://demo.com",
-      category: "Productivity",
-      longDescription: "Created a comprehensive project management solution that helps teams organize tasks, track progress, and collaborate effectively. Features include Kanban boards, Gantt charts, time tracking, and detailed analytics."
+      category: "Assessment Tool",
+      longDescription: "Built a web-based psychometric test assessing analytical, creative, and logical reasoning with instant scoring. Features include real-time score analysis, personalized roadmaps, and responsive UI design for optimal user experience across all devices."
     },
     {
       id: 4,
-      title: "Cryptocurrency Tracker",
-      description: "Real-time crypto price tracking with portfolio management, price alerts, and detailed market analysis using various APIs.",
-      image: "₿",
-      technologies: ["React", "Python", "FastAPI", "Redis", "Chart.js"],
-      github: "https://github.com",
+      title: "Vizag Tourism Website",
+      description: "A fully responsive website highlighting Vizag's popular tourist destinations, optimized for desktop and mobile with interactive UI components and smooth navigation.",
+      image: "🏖️",
+      technologies: ["React.js", "HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      github: "https://github.com/Devakipvn",
       live: "https://demo.com",
-      category: "FinTech",
-      longDescription: "Built a sophisticated cryptocurrency tracking application that aggregates data from multiple exchanges, provides real-time price updates, portfolio management, and advanced charting capabilities for market analysis."
-    },
-    {
-      id: 5,
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with automated reporting, content scheduling, and performance metrics.",
-      image: "📊",
-      technologies: ["React", "D3.js", "Node.js", "PostgreSQL", "AWS"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      category: "Analytics",
-      longDescription: "Developed a comprehensive social media management platform that helps businesses track their social media performance across multiple platforms, schedule content, and generate automated reports with actionable insights."
-    },
-    {
-      id: 6,
-      title: "Learning Management System",
-      description: "Educational platform with video streaming, interactive quizzes, progress tracking, and certification system for online courses.",
-      image: "🎓",
-      technologies: ["Next.js", "TypeScript", "Prisma", "AWS S3", "Stripe"],
-      github: "https://github.com",
-      live: "https://demo.com",
-      category: "Education",
-      longDescription: "Created a full-featured learning management system that enables educators to create and deliver online courses with video content, interactive assessments, progress tracking, and automated certification upon completion."
+      category: "Tourism",
+      longDescription: "Developed a fully responsive website highlighting Vizag's popular tourist destinations, optimized for desktop and mobile. Enhanced user engagement by integrating interactive UI components, media-rich content, and smooth navigation for an immersive user experience."
     }
   ];
 

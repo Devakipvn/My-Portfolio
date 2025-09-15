@@ -37,9 +37,9 @@ const HeroSection = () => {
         {/* Main heading */}
         <div className="space-y-4">
           <h1 className="text-6xl md:text-8xl font-bold font-space">
-            <span className="gradient-text">Alex</span>
+            <span className="gradient-text">Patchipulusu Venkata Naga</span>
             <br />
-            <span className="text-foreground">Johnson</span>
+            <span className="text-foreground">Devaki</span>
           </h1>
           
           {/* Typewriter effect */}
@@ -52,8 +52,8 @@ const HeroSection = () => {
 
         {/* Tagline */}
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Crafting beautiful, functional web experiences with modern technologies. 
-          Passionate about creating intuitive user interfaces and robust backend systems.
+          Full-Stack Developer with 1 year of experience building scalable web applications. 
+          Passionate about creating clean, maintainable code with focus on performance and usability.
         </p>
 
         {/* Action buttons */}
@@ -70,9 +70,9 @@ const HeroSection = () => {
         {/* Social links */}
         <div className="flex gap-6 justify-center pt-8">
           {[
-            { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: Mail, href: "#", label: "Email" }
+            { icon: Github, href: "https://github.com/Devakipvn", label: "GitHub" },
+            { icon: Linkedin, href: "https://linkedin.com/in/pvndevaki", label: "LinkedIn" },
+            { icon: Mail, href: "mailto:devakipvn@gmail.com", label: "Email" }
           ].map(({ icon: Icon, href, label }) => (
             <a
               key={label}
