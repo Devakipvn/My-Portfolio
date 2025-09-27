@@ -29,10 +29,10 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       skills: [
-        { name: "JavaScript", level: 90, color: "bg-gradient-primary" },
+        { name: "JavaScript", level: 80, color: "bg-gradient-primary" },
         { name: "TypeScript", level: 88, color: "bg-gradient-secondary" },
-        { name: "React.js", level: 92, color: "bg-gradient-accent" },
-        { name: "HTML5", level: 95, color: "bg-gradient-primary" },
+        { name: "React.js", level: 82, color: "bg-gradient-accent" },
+        { name: "HTML5", level: 85, color: "bg-gradient-primary" },
         { name: "CSS3", level: 93, color: "bg-gradient-secondary" },
         { name: "Tailwind CSS", level: 90, color: "bg-gradient-accent" },
         { name: "Bootstrap", level: 88, color: "bg-gradient-primary" }
@@ -44,20 +44,20 @@ const SkillsSection = () => {
         { name: "Node.js", level: 87, color: "bg-gradient-accent" },
         { name: "Python", level: 90, color: "bg-gradient-primary" },
         { name: "Java", level: 85, color: "bg-gradient-secondary" },
-        { name: "Flask", level: 88, color: "bg-gradient-accent" },
-        { name: "REST APIs", level: 92, color: "bg-gradient-primary" },
-        { name: "PostgreSQL", level: 89, color: "bg-gradient-secondary" },
-        { name: "MySQL", level: 87, color: "bg-gradient-accent" }
+        { name: "Flask", level: 80, color: "bg-gradient-accent" },
+        { name: "REST APIs", level: 82, color: "bg-gradient-primary" },
+        { name: "PostgreSQL", level: 79, color: "bg-gradient-secondary" },
+        { name: "MySQL", level: 80, color: "bg-gradient-accent" }
       ]
     },
     {
       title: "Tools & Design",
       skills: [
-        { name: "Git", level: 93, color: "bg-gradient-secondary" },
-        { name: "GitHub", level: 92, color: "bg-gradient-accent" },
-        { name: "Postman", level: 90, color: "bg-gradient-primary" },
+        { name: "Git", level: 73, color: "bg-gradient-secondary" },
+        { name: "GitHub", level: 82, color: "bg-gradient-accent" },
+        { name: "Postman", level: 70, color: "bg-gradient-primary" },
         { name: "GitHub Copilot", level: 85, color: "bg-gradient-secondary" },
-        { name: "UI/UX Design", level: 88, color: "bg-gradient-accent" },
+        { name: "UI/UX Design", level: 78, color: "bg-gradient-accent" },
         { name: "Web Design", level: 90, color: "bg-gradient-primary" }
       ]
     }
@@ -74,7 +74,11 @@ const SkillsSection = () => {
     <section ref={sectionRef} className="py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div
+          className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold font-space mb-6">
             My <span className="gradient-text">Skills</span>
           </h2>
@@ -88,8 +92,8 @@ const SkillsSection = () => {
           {skillCategories.map((category, categoryIndex) => (
             <Card
               key={category.title}
-              className={`glass-card glow-effect transition-all duration-1000 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              className={`shadow-card shadow-glow hover:shadow-glow-lg transition-all duration-500 transform hover:scale-105 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${300 + categoryIndex * 200}ms` }}
             >
@@ -107,11 +111,13 @@ const SkillsSection = () => {
                       <div className="h-2 bg-muted rounded-full overflow-hidden">
                         <div
                           className={`h-full ${skill.color} transition-all duration-1000 ease-out ${
-                            animateSkills ? 'opacity-100' : 'opacity-0'
+                            animateSkills ? "opacity-100" : "opacity-0"
                           }`}
                           style={{
-                            width: animateSkills ? `${skill.level}%` : '0%',
-                            transitionDelay: `${800 + categoryIndex * 200 + skillIndex * 100}ms`
+                            width: animateSkills ? `${skill.level}%` : "0%",
+                            transitionDelay: `${
+                              800 + categoryIndex * 200 + skillIndex * 100
+                            }ms`
                           }}
                         />
                       </div>
@@ -123,8 +129,13 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Tech stack badges */}
-        <Card className={`glass-card glow-effect transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: '900ms' }}>
+     {/* Tech stack badges */}
+        <Card
+          className={`shadow-card shadow-glow hover:shadow-glow-lg transition-all duration-500 transform hover:scale-105  ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+          style={{ transitionDelay: "900ms" }}
+        >
           <CardContent className="p-8">
             <h3 className="text-2xl font-bold font-space mb-6 text-center gradient-text">
               Technologies I Work With
@@ -133,18 +144,22 @@ const SkillsSection = () => {
               {techStack.map((tech, index) => (
                 <Badge
                   key={tech}
-                  variant="secondary"
-                  className={`glass-card px-4 py-2 text-sm font-medium hover:scale-105 transition-all duration-300 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-                  }`}
+                  className={`px-4 py-2 text-sm font-medium 
+                    bg-gray-700/70 text-gray-100 border border-gray-600
+                    hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white
+                    hover:scale-110 transition-all duration-300 ${
+                      isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+                    }`}
                   style={{ transitionDelay: `${1000 + index * 50}ms` }}
                 >
                   {tech}
                 </Badge>
+
               ))}
             </div>
           </CardContent>
         </Card>
+
       </div>
     </section>
   );

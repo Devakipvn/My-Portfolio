@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Award, ExternalLink, Calendar } from "lucide-react";
+import { Award, Calendar } from "lucide-react";
 
 const CertificatesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,86 +12,81 @@ const CertificatesSection = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.2 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
   const certificates = [
     {
       id: 1,
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-CSA-2023-001",
-      description: "Comprehensive certification covering AWS cloud architecture, security, scalability, and cost optimization.",
-      skills: ["Cloud Architecture", "AWS Services", "Security", "Cost Optimization"],
-      icon: "☁️",
+      title: "OCA - Certified Java Associate",
+      issuer: "Oracle",
+      date: "Aug 2025",
+      url: "https://www.linkedin.com/in/pvndevaki/overlay/1754483343341/single-media-viewer/?profileId=ACoAAD39q48B19cFjrPCDuZZ-43_ytrfKIy3Keo",
+      icon: "☕",
       level: "Professional"
     },
     {
       id: 2,
-      title: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      credentialId: "GCP-PD-2023-002",
-      description: "Professional-level certification for developing scalable applications on Google Cloud Platform.",
-      skills: ["GCP Services", "Kubernetes", "App Engine", "Cloud Functions"],
-      icon: "🌐",
-      level: "Professional"
+      title: "The Complete Introduction to SQL Programming",
+      issuer: "Udemy",
+      date: "Aug 2025",
+      url: "https://www.udemy.com/certificate/UC-b11e01e4-29fc-4e1b-9a78-cad05df85833/",
+      icon: "🗄️",
+      level: "Intermediate"
     },
+
     {
       id: 3,
-      title: "Meta React Developer Certificate",
-      issuer: "Meta (Facebook)",
-      date: "2022",
-      credentialId: "META-RD-2022-003",
-      description: "Advanced React development certification covering modern React patterns, hooks, and performance optimization.",
-      skills: ["React", "Redux", "Hooks", "Performance", "Testing"],
-      icon: "⚛️",
-      level: "Advanced"
+      title: "Python Complete Course and Flask Framework, HTML Essentials",
+      issuer: "Udemy",
+      date: "Aug 2025",
+      url: "https://www.udemy.com/certificate/UC-77ce4c32-e15d-461f-9095-618a9356f236/",
+      icon: "🐍",
+      level: "Intermediate"
     },
+
     {
       id: 4,
-      title: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      date: "2022",
-      credentialId: "MDB-CD-2022-004",
-      description: "Comprehensive certification covering MongoDB database design, queries, and application development.",
-      skills: ["MongoDB", "NoSQL", "Aggregation", "Indexing", "Sharding"],
-      icon: "🍃",
-      level: "Professional"
+      title: "Basics of Python",
+      issuer: "Infosys Springboard",
+      date: "June 2025",
+      url: "https://www.linkedin.com/in/pvndevaki/details/certifications/1749567666674/single-media-viewer/?profileId=ACoAAD39q48B19cFjrPCDuZZ-43_ytrfKIy3Keo",
+      icon: "🐍",
+      level: "Beginner"
     },
+
     {
       id: 5,
-      title: "Docker Certified Associate",
-      issuer: "Docker Inc.",
-      date: "2021",
-      credentialId: "DCA-2021-005",
-      description: "Certification demonstrating proficiency in Docker containerization and orchestration technologies.",
-      skills: ["Docker", "Containers", "Docker Compose", "Swarm", "DevOps"],
-      icon: "🐳",
-      level: "Associate"
+      title: "Learn HTML and CSS from Beginning to Advanced",
+      issuer: "Udemy",
+      date: "Dec 2024",
+      url: "https://www.udemy.com/certificate/UC-53a98fb5-1e22-482a-9db8-20fd6a06932b/",
+      icon: "🌐",
+      level: "Beginner"
     },
+    
     {
       id: 6,
-      title: "Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2021",
-      credentialId: "CKA-2021-006",
-      description: "Hands-on certification demonstrating skills in Kubernetes cluster administration and management.",
-      skills: ["Kubernetes", "Cluster Management", "Networking", "Security", "Troubleshooting"],
-      icon: "⚓",
-      level: "Professional"
+      title: "How to Plan Your Website",
+      issuer: "LinkedIn Learning",
+      date: "Jan 2025",
+      url: "https://www.linkedin.com/learning/certificates/7ab351c1531d62f6c0c126a50790d611fc9d52de81448763fee1a3e3d1c2c557",
+      icon: "📐",
+      level: "Beginner"
+    },
+    {
+      id: 7,
+      title: "Introduction to Web Design and Development",
+      issuer: "LinkedIn Learning",
+      date: "Dec 2024",
+      url: "https://www.linkedin.com/in/pvndevaki/details/certifications/1734879833779/single-media-viewer/?profileId=ACoAAD39q48B19cFjrPCDuZZ-43_ytrfKIy3Keo",
+      icon: "💻",
+      level: "Beginner"
     }
   ];
 
@@ -104,7 +99,7 @@ const CertificatesSection = () => {
             <span className="gradient-text">Certifications</span> & Achievements
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Professional certifications and achievements that validate my expertise in various technologies.
+            Professional certifications validating my skills in programming, web development, and software engineering.
           </p>
         </div>
 
@@ -113,35 +108,22 @@ const CertificatesSection = () => {
           {certificates.map((cert, index) => (
             <div
               key={cert.id}
-              className={`transition-all duration-1000 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
+              className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
               style={{ transitionDelay: `${300 + index * 150}ms` }}
             >
               <Card 
-                className={`glass-card glow-effect cursor-pointer h-full transition-all duration-500 transform-gpu ${
-                  flippedCard === cert.id ? 'rotate-y-180' : ''
-                }`}
+                className="shadow-card shadow-glow hover:shadow-glow-lg cursor-pointer h-full transition-all duration-500 transform-gpu"
                 onMouseEnter={() => setFlippedCard(cert.id)}
                 onMouseLeave={() => setFlippedCard(null)}
-                style={{ 
-                  transformStyle: 'preserve-3d',
-                  perspective: '1000px'
-                }}
+                style={{ transformStyle: 'preserve-3d', perspective: '1000px' }}
               >
-                {/* Front of card */}
+                {/* Front */}
                 <CardContent className={`p-6 space-y-4 backface-hidden ${flippedCard === cert.id ? 'opacity-0' : 'opacity-100'}`}>
                   <div className="text-center space-y-4">
                     <div className="text-4xl mb-4">{cert.icon}</div>
-                    <Badge variant="secondary" className="glass-card">
-                      {cert.level}
-                    </Badge>
-                    <h3 className="text-lg font-bold font-space leading-tight">
-                      {cert.title}
-                    </h3>
-                    <p className="text-muted-foreground font-medium">
-                      {cert.issuer}
-                    </p>
+                    <Badge variant="secondary" className="glass-card">{cert.level}</Badge>
+                    <h3 className="text-lg font-bold font-space leading-tight">{cert.title}</h3>
+                    <p className="text-muted-foreground font-medium">{cert.issuer}</p>
                     <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="h-4 w-4" />
                       {cert.date}
@@ -149,88 +131,28 @@ const CertificatesSection = () => {
                   </div>
                 </CardContent>
 
-                {/* Back of card */}
+                {/* Back */}
                 <CardContent className={`p-6 space-y-4 absolute inset-0 backface-hidden rotate-y-180 ${flippedCard === cert.id ? 'opacity-100' : 'opacity-0'}`}>
-                  <div className="space-y-4 h-full flex flex-col">
+                  <div className="space-y-4 h-full flex flex-col justify-between">
                     <div className="text-center">
-                      <h3 className="text-lg font-bold font-space gradient-text mb-2">
-                        {cert.title}
-                      </h3>
+                      <h3 className="text-lg font-bold font-space gradient-text mb-2">{cert.title}</h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        {cert.description}
+                        Issued by {cert.issuer} in {cert.date}.
                       </p>
                     </div>
-                    
-                    <div className="space-y-3 flex-1">
-                      <div>
-                        <h4 className="font-semibold text-sm mb-2">Skills Covered:</h4>
-                        <div className="flex flex-wrap gap-1">
-                          {cert.skills.map((skill) => (
-                            <Badge key={skill} variant="outline" className="text-xs">
-                              {skill}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+                                text-white font-semibold text-sm py-2 px-4 rounded-lg 
+                                shadow-glow hover:shadow-lg transition-all duration-300 
+                                transform hover:scale-105 flex items-center justify-center"
+                    >
+                      <Award className="h-4 w-4 mr-2 inline" />
+                      View Certificate
+                    </a>
 
-                      <div className="text-xs text-muted-foreground">
-                        <span className="font-semibold">Credential ID:</span> {cert.credentialId}
-                      </div>
-                    </div>
-
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <button className="w-full gradient-button text-sm py-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
-                          <Award className="h-4 w-4 mr-2 inline" />
-                          View Certificate
-                        </button>
-                      </DialogTrigger>
-                      <DialogContent className="glass-card max-w-2xl">
-                        <DialogHeader>
-                          <DialogTitle className="text-2xl font-space gradient-text flex items-center gap-2">
-                            <span className="text-3xl">{cert.icon}</span>
-                            {cert.title}
-                          </DialogTitle>
-                        </DialogHeader>
-                        <div className="space-y-6">
-                          <div className="text-center p-8 bg-gradient-primary rounded-lg">
-                            <div className="text-6xl mb-4">{cert.icon}</div>
-                            <h3 className="text-2xl font-bold text-white mb-2">{cert.title}</h3>
-                            <p className="text-white/80 text-lg">{cert.issuer}</p>
-                            <p className="text-white/60 mt-2">Earned in {cert.date}</p>
-                          </div>
-                          
-                          <div className="space-y-4">
-                            <div>
-                              <h4 className="font-semibold mb-2">Description:</h4>
-                              <p className="text-muted-foreground leading-relaxed">{cert.description}</p>
-                            </div>
-                            
-                            <div>
-                              <h4 className="font-semibold mb-2">Skills & Technologies:</h4>
-                              <div className="flex flex-wrap gap-2">
-                                {cert.skills.map((skill) => (
-                                  <Badge key={skill} variant="secondary" className="glass-card">
-                                    {skill}
-                                  </Badge>
-                                ))}
-                              </div>
-                            </div>
-
-                            <div className="flex items-center justify-between p-4 bg-muted rounded-lg">
-                              <div>
-                                <p className="font-semibold">Credential ID</p>
-                                <p className="font-mono text-sm text-muted-foreground">{cert.credentialId}</p>
-                              </div>
-                              <button className="gradient-button px-4 py-2 rounded-lg">
-                                <ExternalLink className="h-4 w-4 mr-2 inline" />
-                                Verify
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
                   </div>
                 </CardContent>
               </Card>
