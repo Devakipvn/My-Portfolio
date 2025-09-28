@@ -175,7 +175,7 @@ const ProjectsSection = () => {
       : PROJECTS.filter((p) => p.category === filter);
   return (
   <section
-      id="projects"   // ✅ add this line
+      id="projects"   
       ref={sectionRef}
       className="py-20 px-4 md:px-8"
     >
@@ -215,7 +215,8 @@ const ProjectsSection = () => {
                         ? "opacity-100 translate-y-0"
                         : "opacity-0 translate-y-10"
                     }`}
-                  style={{ transitionDelay: `${300 + index * 150}ms` }}
+                  style={{ transitionDelay: `${50 + index * 50}ms` }}
+
                 >
                   <CardContent className="p-6 space-y-4">
                     {/* Image placeholder */}

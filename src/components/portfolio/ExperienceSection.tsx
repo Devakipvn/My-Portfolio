@@ -79,7 +79,6 @@ const EDUCATION = [
 const ExperienceSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -107,12 +106,10 @@ const ExperienceSection = () => {
             My professional journey through various roles and responsibilities.
           </p>
         </div>
-
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-500/40 z-0"></div>
-
           {EXPERIENCE.map((exp, index) => (
             <div
               key={exp.id}
@@ -122,63 +119,58 @@ const ExperienceSection = () => {
             >
               {/* Timeline marker */}
               <div className="absolute md:top-1/2 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-purple-500 shadow-glow z-10"></div>
-
               {/* Card */}
               <div
-  className={`w-full md:w-5/12 ${
-    index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
-  }`}
->
-  <Card className="shadow-card hover:shadow-glow hover:scale-105 glass-card tilt-card group cursor-pointer transition-all duration-300">
-    <CardContent className="p-4 space-y-3 text-left">
-      {/* Always left-aligned */}
-      <div className="flex flex-wrap items-center gap-2">
-        <h3 className="text-lg md:text-xl font-bold font-space gradient-text">
-          {exp.position}
-        </h3>
-        <Badge className="bg-gray-700/70 text-gray-100 border border-gray-600 text-xs">
-          {exp.company}
-        </Badge>
-      </div>
-
-      <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-        <div className="flex items-center gap-1">
-          <Calendar className="h-4 w-4 text-purple-400" />
-          {exp.duration}
-        </div>
-        <div className="flex items-center gap-1">
-          <MapPin className="h-4 w-4 text-purple-400" />
-          {exp.location}
-        </div>
-      </div>
-
-      <p className="text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
-
-      <div className="flex flex-wrap gap-2">
-        {exp.technologies.map((tech) => (
-          <Badge
-            key={tech}
-            className="bg-gray-700/70 text-gray-100 border border-gray-600 text-xs shadow-card hover:shadow-glow transition-all duration-300"
-          >
-            {tech}
-          </Badge>
-        ))}
-      </div>
-
-      <div className="space-y-1 pt-2">
-        <h4 className="font-semibold text-sm text-purple-400">Key Achievements:</h4>
-        <ul className="space-y-1">
-          {exp.achievements.map((achieve, i) => (
-            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-              <span className="text-purple-400 mt-1">•</span>
-              {achieve}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </CardContent>
-  </Card>
-</div>
+                className={`w-full md:w-5/12 ${
+                  index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"
+                }`}
+              >
+              <Card className="shadow-card hover:shadow-glow hover:scale-105 glass-card tilt-card group cursor-pointer transition-all duration-300">
+                <CardContent className="p-4 space-y-3 text-left">
+                  {/* Always left-aligned */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <h3 className="text-lg md:text-xl font-bold font-space gradient-text">
+                      {exp.position}
+                    </h3>
+                    <Badge className="bg-gray-700/70 text-gray-100 border border-gray-600 text-xs">
+                      {exp.company}
+                    </Badge>
+                  </div>
+                  <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4 text-purple-400" />
+                      {exp.duration}
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <MapPin className="h-4 w-4 text-purple-400" />
+                      {exp.location}
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {exp.technologies.map((tech) => (
+                      <Badge
+                        key={tech}
+                        className="bg-gray-700/70 text-gray-100 border border-gray-600 text-xs shadow-card hover:shadow-glow transition-all duration-300"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                    <div className="space-y-1 pt-2">
+                      <h4 className="font-semibold text-sm text-purple-400">Key Achievements:</h4>
+                      <ul className="space-y-1">
+                        {exp.achievements.map((achieve, i) => (
+                          <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                            <span className="text-purple-400 mt-1">•</span>
+                            {achieve}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           ))}
         </div>
@@ -196,7 +188,6 @@ const ExperienceSection = () => {
             My academic background and qualifications.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
           {EDUCATION.map((edu, index) => (
             <Card
@@ -214,7 +205,6 @@ const ExperienceSection = () => {
                   <GraduationCap className="h-5 w-5 text-purple-400" />
                   <h3 className="text-lg font-semibold gradient-text">{edu.program}</h3>
                 </div>
-
                 <p className="text-sm text-muted-foreground">{edu.place}</p>
                 <p className="text-sm font-medium text-purple-400">{edu.detail}</p>
               </CardContent>
