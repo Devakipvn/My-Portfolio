@@ -11,7 +11,7 @@ const EXPERIENCE = [
     company: "ProjectsPlace",
     position: "Full-Stack Developer",
     location: "On-Site",
-    duration: "Aug 2025 - Present",
+    duration: "Apr 2025 - Present",
     description:
       "Developed a full-stack platform alongside friends to deliver real-world applications. Designed responsive frontend interfaces and integrated backend APIs. Built scalable and reusable code for cross-device compatibility.",
     technologies: ["JavaScript", "TypeScript", "React.js", "Node.js", "REST APIs"],

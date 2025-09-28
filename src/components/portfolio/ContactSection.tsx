@@ -70,7 +70,7 @@ const ContactSection = () => {
   const contactInfo = [
     { icon: Mail, title: "Email", value: "devakipvn@gmail.com", href: "mailto:devakipvn@gmail.com" },
     { icon: Phone, title: "Phone", value: "+91 8328033928", href: "tel:+918328033928" },
-    { icon: MapPin, title: "Location", value: "Tirupati, A.P, India", href: "#" },
+    { icon: MapPin, title: "Location", value: "Vizianagaram, A.P, India", href: "#" },
   ];
 
   const socialLinks = [

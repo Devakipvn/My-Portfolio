@@ -35,12 +35,12 @@ const Index = () => {
       
       {/* Skills Section */}
       <SkillsSection />
-      
-      {/* Projects Section */}
-      <ProjectsSection />
-      
+
       {/* Experience Section */}
       <ExperienceSection />
+
+       {/* Projects Section */}
+      <ProjectsSection />
       
       {/* Certificates Section */}
       <CertificatesSection />
@@ -53,7 +53,11 @@ const Index = () => {
         <Button
           onClick={scrollToTop}
           size="icon"
-          className="fixed bottom-8 right-8 z-50 gradient-button rounded-full w-12 h-12 shadow-glow"
+          className="fixed bottom-8 right-8 z-50 rounded-full w-12 h-12 shadow-glow 
+           bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+           text-white font-semibold text-lg flex items-center justify-center 
+           hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 
+           hover:shadow-lg transition-all duration-300 transform hover:scale-105"
         >
           <ArrowUp className="h-5 w-5" />
         </Button>
