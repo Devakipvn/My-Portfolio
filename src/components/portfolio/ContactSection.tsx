@@ -76,7 +76,6 @@ const ContactSection = () => {
   const socialLinks = [
     { icon: Github, name: "GitHub", href: "https://github.com/Devakipvn", color: "hover:text-foreground" },
     { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com/in/pvndevaki", color: "hover:text-blue-400" },
-    { icon: Mail, name: "Email", href: "mailto:devakipvn@gmail.com", color: "hover:text-red-400" },
   ];
 
   return (
@@ -177,19 +176,6 @@ const ContactSection = () => {
                     );
                   })}
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* CTA */}
-            <Card className={`glass-card shadow-glow hover:shadow-glow-lg hover:scale-105 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`} style={{ transitionDelay: "900ms" }}>
-              <CardContent className="p-8 text-center space-y-4">
-                <h3 className="text-xl font-bold font-space gradient-text">Ready to work together?</h3>
-                <p className="text-muted-foreground">I'm always interested in new opportunities and exciting projects.</p>
-                <a href="mailto:devakipvn@gmail.com?subject=Regarding%20Your%20Portfolio&body=Hi%20Devaki,%0D%0A%0D%0AI%20just%20checked%20your%20portfolio...">
-                  <Button className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-base py-2 px-6 rounded-lg shadow-glow hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto">
-                    <Mail className="h-4 w-4 mr-2" /> Start a Conversation
-                  </Button>
-                </a>
               </CardContent>
             </Card>
           </div>

@@ -101,12 +101,19 @@ const AboutSection = () => {
                   </p>
                 </div>
                 <div className="flex justify-center">
-                  <div className="w-64 h-64 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <div className="w-56 h-56 bg-card rounded-full flex items-center justify-center">
-                      <span className="text-9xl">👩‍💻</span>
-                    </div>
-                  </div>
-                </div>
+  <div className="w-64 h-64 bg-gradient-primary rounded-full flex items-center justify-center">
+    <div className="w-56 h-56 bg-card rounded-full flex items-center justify-center overflow-hidden">
+      <img
+        src="/images/My Profile.jpg"
+        alt="Devaki"
+        className="w-full h-full object-cover rounded-full"
+        style={{ objectPosition: "top" }} // shift to show upper part of image (face)
+      />
+    </div>
+  </div>
+</div>
+
+
               </div>
             </CardContent>
           </Card>
