@@ -22,7 +22,58 @@ import {
 const PROJECTS = [
  
   {
-    id: 1,
+  id: 1,
+  title: "ResumeAI Enhancer",
+  description:
+    "AI-powered resume analysis platform that provides ATS-friendly suggestions and job-match insights.",
+  image: "images/ResumeAI.png", // add image to your images folder
+  fit: "contain",
+  technologies: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "CSS",
+    "HTML",
+    "Tailwind CSS",
+    "OpenAI API",
+    "shadcn/ui",
+    "Supabase",
+  ],
+  live: "https://resume-enhancer-ai.vercel.app/",
+  category: "web",
+  longDescription:
+    "ResumeAI Enhancer is a web application that analyzes resumes against job requirements and provides ATS-friendly suggestions, keyword improvements, and job-match insights. Built to solve a real-world problem faced by freshers, with a clean UI and practical AI integration.",
+},
+{
+  id: 2,
+  title: "Maison Fashion Store",
+  description:
+    "Fashion e-commerce website with product listings and modern UI for online shopping experience.",
+  image: "images/Maison.png", // add image to your images folder
+  fit: "cover",
+  technologies: [
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "JavaScript",
+    "TypeScript",
+    "CSS",
+    "HTML",
+    "Tailwind CSS",
+    "Stripe API",
+    "shadcn/ui",
+    "Supabase",
+  ],
+  
+  live: "https://maison-fashion-store.vercel.app/",
+  category: "web",
+  longDescription:
+    "Maison Fashion Store is a fashion-focused e-commerce web application showcasing clothing products with a clean layout and smooth browsing experience. The project emphasizes UI design, responsive layouts, and real-world e-commerce flow.",
+},
+
+  {
+    id: 3,
     title: "Jobseekr – AI-Powered Resume & Job Platform",
     description:
       "Full-stack job portal with real-time job listings, OAuth, and AI-powered Resume Builder + Assistant.",
@@ -45,7 +96,7 @@ const PROJECTS = [
   },
 
   {
-    id: 2,
+    id: 4,
     title: "CodeCanvas – Online Code Editor",
     description:
       "Instant execution + live preview, auth, project management, and responsive UI.",
@@ -68,7 +119,7 @@ const PROJECTS = [
 
 
   {
-    id: 3,
+    id: 5,
     title: "Dynamic Kanban Board",
     description:
       "Interactive Kanban board with drag & drop, persistence, and modular JS functions.",
@@ -83,7 +134,7 @@ const PROJECTS = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: "Psychometric Test Web App",
     description:
       "Web-based psychometric test with scoring, analysis, and learning roadmaps.",
@@ -98,7 +149,7 @@ const PROJECTS = [
   },
 
   {
-    id: 5,
+    id: 7,
     title: "Book Management Dashboard 📚",
     description:
       "Responsive React.js dashboard to manage books with CRUD operations and mock API integration.",
@@ -112,7 +163,7 @@ const PROJECTS = [
   },
 
   {
-    id: 6,
+    id: 8,
     title: "Java ATM GUI Application",
     description:
       "Java Swing-based ATM simulator with login, deposit, withdrawal, and balance check.",
@@ -125,7 +176,7 @@ const PROJECTS = [
       "ATM app built with core Java + Swing. Implements GUI event handling and OOP concepts for banking simulation.",
   },
   {
-    id: 7,
+    id: 9,
     title: "Sentiment Analysis (Customer Reviews)",
     description: "Classifies customer reviews as positive, negative, or neutral.",
     image: "images/Sentimental Analysis img.png",
@@ -138,7 +189,7 @@ const PROJECTS = [
       "NLP-based ML model with preprocessing (tokenization, lemmatization, stopwords). Uses Naïve Bayes for classification of reviews.",
   },
   {
-    id: 8,
+    id: 10,
     title: "Scientific Calculator",
     description: "Python Tkinter GUI calculator with advanced scientific functions.",
     image: "images/Scientific Calculator img.png",

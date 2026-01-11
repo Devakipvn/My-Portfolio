@@ -79,7 +79,7 @@ const HeroSection = () => {
 
         {/* Action buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href="/devaki_resume.pdf" download>
+          <a href="\Devaki_FullStack_Developer_Resume.pdf" download>
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 

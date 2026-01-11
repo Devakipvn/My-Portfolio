@@ -25,50 +25,99 @@ const SkillsSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const skillCategories = [
-    {
-      title: "Frontend",
-      skills: [
-        { name: "JavaScript", level: 80, color: "bg-gradient-primary" },
-        { name: "TypeScript", level: 88, color: "bg-gradient-secondary" },
-        { name: "React.js", level: 82, color: "bg-gradient-accent" },
-        { name: "HTML5", level: 85, color: "bg-gradient-primary" },
-        { name: "CSS3", level: 93, color: "bg-gradient-secondary" },
-        { name: "Tailwind CSS", level: 90, color: "bg-gradient-accent" },
-        { name: "Bootstrap", level: 88, color: "bg-gradient-primary" }
-      ]
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: "Node.js", level: 87, color: "bg-gradient-accent" },
-        { name: "Python", level: 90, color: "bg-gradient-primary" },
-        { name: "Java", level: 85, color: "bg-gradient-secondary" },
-        { name: "Flask", level: 80, color: "bg-gradient-accent" },
-        { name: "REST APIs", level: 82, color: "bg-gradient-primary" },
-        { name: "PostgreSQL", level: 79, color: "bg-gradient-secondary" },
-        { name: "MySQL", level: 80, color: "bg-gradient-accent" }
-      ]
-    },
-    {
-      title: "Tools & Design",
-      skills: [
-        { name: "Git", level: 73, color: "bg-gradient-secondary" },
-        { name: "GitHub", level: 82, color: "bg-gradient-accent" },
-        { name: "Postman", level: 70, color: "bg-gradient-primary" },
-        { name: "GitHub Copilot", level: 85, color: "bg-gradient-secondary" },
-        { name: "UI/UX Design", level: 78, color: "bg-gradient-accent" },
-        { name: "Web Design", level: 90, color: "bg-gradient-primary" }
-      ]
-    }
-  ];
+ const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "JavaScript", level: 85, color: "bg-gradient-primary" },
+      { name: "TypeScript", level: 88, color: "bg-gradient-secondary" },
+      { name: "React.js", level: 85, color: "bg-gradient-accent" },
+      { name: "Next.js", level: 82, color: "bg-gradient-primary" },
+      { name: "HTML5", level: 90, color: "bg-gradient-secondary" },
+      { name: "CSS3", level: 92, color: "bg-gradient-accent" },
+      { name: "Tailwind CSS", level: 90, color: "bg-gradient-primary" },
+      { name: "Bootstrap", level: 88, color: "bg-gradient-secondary" },
+      { name: "Material UI", level: 75, color: "bg-gradient-accent" },
+      { name: "Shadcn/ui", level: 75, color: "bg-gradient-primary" }
+    ]
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", level: 80, color: "bg-gradient-primary" },
+      { name: "Python", level: 88, color: "bg-gradient-secondary" },
+      { name: "Java", level: 85, color: "bg-gradient-accent" },
+      { name: "Flask", level: 80, color: "bg-gradient-primary" },
+      { name: "REST APIs", level: 82, color: "bg-gradient-secondary" },
+      { name: "PostgreSQL", level: 78, color: "bg-gradient-accent" },
+      { name: "MySQL", level: 80, color: "bg-gradient-primary" },
+      { name: "Prisma ORM", level: 72, color: "bg-gradient-secondary" },
+      { name: "NextAuth", level: 70, color: "bg-gradient-accent" },
+      { name: "Supabase", level: 75, color: "bg-gradient-primary" }
+    ]
+  },
+  
+  {
+    title: "Tools & Design",
+    skills: [
+      { name: "Git", level: 75, color: "bg-gradient-primary" },
+      { name: "GitHub", level: 85, color: "bg-gradient-secondary" },
+      { name: "Postman", level: 72, color: "bg-gradient-accent" },
+      { name: "GitHub Copilot", level: 65, color: "bg-gradient-primary" },
+      { name: "VS Code", level: 90, color: "bg-gradient-secondary" },
+      { name: "Linux (Basics)", level: 65, color: "bg-gradient-accent" },
+      { name: "UI/UX Design", level: 78, color: "bg-gradient-primary" },
+      { name: "Web Design", level: 90, color: "bg-gradient-secondary" },
+      { name: "Vercel Deployment", level: 80, color: "bg-gradient-accent" },
+      { name: "Git Bash", level: 70, color: "bg-gradient-primary" }
+    ]
+  }
+];
+const techStack = [
+  // Frontend
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "Bootstrap",
+  "Tailwind CSS",
+  "Material UI",
+  "Shadcn/ui",
 
-  const techStack = [
-    "JavaScript", "TypeScript", "React.js", "HTML5", "CSS3", "Bootstrap", 
-    "Tailwind CSS", "Node.js", "Python", "Java", "Flask", "REST APIs", 
-    "Git", "GitHub", "Postman", "GitHub Copilot", "PostgreSQL", "MySQL", 
-    "UI/UX Design", "Web Design"
-  ];
+  // Backend
+  "Node.js",
+  "Python",
+  "Java",
+  "Flask",
+  "REST APIs",
+  "Prisma ORM",
+  "NextAuth",
+
+  // Databases
+  "PostgreSQL",
+  "MySQL",
+
+  // Tools & Platforms
+  "Git",
+  "GitHub",
+  "Postman",
+  "GitHub Copilot",
+  "VS Code",
+  "Linux",
+  "Vercel",
+
+  // Desktop / GUI
+  "Java Swing",
+  "Tkinter",
+
+  // Design
+  "UI/UX Design",
+  "Web Design"
+];
+
+
 
   return (
     <section ref={sectionRef} className="py-20 px-4 md:px-8">

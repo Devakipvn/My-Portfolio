@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
-import { Mail, Phone, MapPin, Github, Linkedin, Send, Loader2, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Send, Loader2, CheckCircle2, ExternalLink } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
@@ -69,13 +69,13 @@ const ContactSection = () => {
 
   const contactInfo = [
     { icon: Mail, title: "Email", value: "devakipvn@gmail.com", href: "mailto:devakipvn@gmail.com" },
-    { icon: Phone, title: "Phone", value: "+91 8328033928", href: "tel:+918328033928" },
+    { icon: Linkedin, title: "LinkedIn", value: "linkedin.com/in/pvndevaki", href: "https://linkedin.com/in/pvndevaki" },
     { icon: MapPin, title: "Location", value: "Vizianagaram, A.P, India", href: "#" },
   ];
 
   const socialLinks = [
     { icon: Github, name: "GitHub", href: "https://github.com/Devakipvn", color: "hover:text-foreground" },
-    { icon: Linkedin, name: "LinkedIn", href: "https://linkedin.com/in/pvndevaki", color: "hover:text-blue-400" },
+    { icon: ExternalLink, name: "GeeksforGeeks", href: "https://www.geeksforgeeks.org/profile/devak56yg?from=edit&tab=activity", color: "hover:text-green-500" },
   ];
 
   return (
@@ -121,8 +121,7 @@ const ContactSection = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-base py-3 px-10 rounded-lg shadow-glow hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto`}
-                >
+                  className={`bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold text-base py-3 px-10 rounded-lg shadow-glow hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto`}>
                   {isSubmitting ? (
                     <Loader2 className="animate-spin mr-2 w-5 h-5" />
                   ) : success ? (
